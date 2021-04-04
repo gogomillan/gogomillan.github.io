@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>[gogomillan, UCEVA]</title>
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/cv">CV</a></li>
+        <li><a href="/blog">Blog</a></li>
+       </ul>
+    </nav>
+    <div class="container">
+      <div class="blurb">
+        <h1>First exam:</h1>
+        <ul>
+          <li>Basados en el Jupyter Notebook del <a href="../workshops/04_pandas.html" target="_blank" rel="noopener noreferrer">Workshop 04</a> y teniendo como referencia de limpieza de datos el <a href="/workshops/03_pandas.html" target="_blank" rel="noopener noreferrer">Workshop 03</a>, realizar las siguientes tareas:</li>
+          <br>
+          <ol>
+            <li>Usando como plantilla el Workshop 04, crear un nuevo Notebook de Jupyter. Guardar y nombrarlo. Nombrelo como: AI_Exam_01_SUNOMBREyAPELLIDO (Si hay dos integrantes, entonces dos nombre), la extención es la de un Jupyter Notebook.</li>
+            <br>
+            <li>Actualizar la información a la fecha (La del Notebook es de 2015 y ya hay info más reciente), tanto para los casos de tuberculosis como la población total
+              <br>URL de World Health Organization: <a href="https://apps.who.int/gho/data/view.main.57020ALL?lang=en" target="_blank" rel="noopener noreferrer">By category > Tuberculosis > Cases and deaths</a>
+              <br>En está página puedes conseguir la información. Igualmente en los siguientes enlaces:
+              <ul>
+                <li>Enlace para la info en forma de tabla: <a href="https://apps.who.int/gho/athena/data/data.xls?target=GHO/MDG_0000000017,TB_e_mort_exc_tbhiv_num&format=xml&profile=excel-xtab&filter=COUNTRY:*;REGION:*&x-sideaxis=COUNTRY;YEAR&x-topaxis=GHO" target="_blank" rel="noopener noreferrer">table.xml</a>, se puede abrir con excel para observar su contenido.</li>
+                <li>Enlace para la info en forma de datos: <a href="https://apps.who.int/gho/athena/data/GHO/MDG_0000000017,TB_e_mort_exc_tbhiv_num?filter=COUNTRY:*;REGION:*&x-sideaxis=COUNTRY;YEAR&x-topaxis=GHO&profile=excel&format=xml" target="_blank" rel="noopener noreferrer">data.xml</a>, se puede abrir con excel para observar su contenido.</li>
+              </ul>
+              Cuando descargues la información para revisión puedes contrastarla con la de los siguientes enlaces:
+              <ul>
+                <li>Tabla: <a href=table.xml" target="_blank" rel="noopener noreferrer">table.xml</a>, se puede abrir con excel para observar su contenido.</li>
+                <li>Datos: <a href="data.xml" target="_blank" rel="noopener noreferrer">data.xml</a>, se puede abrir con excel para observar su contenido.</li>
+              </ul>
+              La información debe limpiarse y transformarse para llegar a los datos de pais, cantidad de muertes(sin VIH), población.
+              <ul>
+                <li>La información de nombre de país debe ser la correspondiente a nombre de paises, no de regiones (p.e.  Latinamerica)</li>
+                <li>La información de cantidad de muertes debe ser un valor entero</li>
+                <li>La información de población  debe ser un valor entero y deducido a partir de las muertes por 100000 habitantes y la cantidad de muertes (Deducir el cálculo algebraicamente)</li>
+                <li>Cualquier limpieza y transformación se debe realizar en los dataset cargados por pandas</li>
+                <li>Cualquier limpieza y transformación se debe realizar usando Python (Si son necesarias librerías importarlas)</li>
+              </ul>
+            </li>
+            <br>
+            <li>Conforme está en Workshop 04, escribir realizar los cálculos y poniendo los comentarios en cada una de las celdas del Notebook:
+              <ul>
+                <li>Para las celdas de comentarios usar el lenguaje Markdown. El idioma puede ser Ingles o Español.</li>
+                <li>Para las celdas de cálculos usar el lenguaje Python.</li>
+                <li>Es posible que algunos de los comando de Python no funcionen exactamente como está en la plantilla. Introduzca los ajustes necesarios.</li>
+              </ul>
+            </li>
+            <br>
+            <li>Recuerda siempre hacer buenas conclusiones de los datos observados.</li>
+            <br>
+            <li>Crea una celda adicional en el Notebook donde grabas en disco el dataset resultado usando al librería pandas.</li>
+            <br>
+            <li>Asegurate de tener en el mismo directorio el archivo con los datos obtenidos desde World Health Organization. (Tal como está en Workshop 04)</li>
+            <br>
+          </ol>
+          <li>Una vez que desarrolles los puntos anteriores toma el archivo y súbelo a tu GitHub en el repo de la materia y dentro de una carpeta llamada "exam_first". También los archivos de los datos.</li>
+          <br>
+          <li>Crea un arhivo llamado enlaces.txt donde almacenes el enlace de GitHub para acceder a la solución.</li>
+          <br>
+          <li>Crea un archivo comprimido (.zip or .rar) con el/los nombre(s) del/los estudiante(s). El archivo contendrá todos los archivos del examen parcial. Este archivo se subirá a la plataforma Moodle.</li>
+          <br>
+          <li>Vaya a la plataforma Moodle de la UCEVA. En <a href="https://www.uceva.edu.co/" target="_blank" rel="noopener noreferrer">UCEVA</a> e ingrese a la Oficina Virtual y a su vez a la Plataforma de educación Vritual. Una vez allí busque su materia de Inteligencia Artificial y en la materia Busque Corte Parcial I. Ingrese y suba el archivo comprimido entragable que contiene todo el desarrollo realizado.</li>
+        </ul>
+      </div><!-- /.blurb -->
+    </div><!-- /.container -->
+    <footer>
+      <ul>
+        <li><a href="mailto:gonzalo.gomez.millan@gmail.com">email contact</a></li>
+        <li><a href="https://github.com/gogomillan">github.com/gogomillan</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
